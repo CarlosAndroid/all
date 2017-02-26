@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">All</string>
+
+    <!-- Toolbars-->
+    <string name="title1Toolbar1">Titulo</string>
+    <string name="title2Toolbar1">Titulo2</string>
+</resources>

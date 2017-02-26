@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorIcons">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_margin="15dp"
+            app:elevation="6dp"
+            app:srcCompat="@drawable/fab_plus"
+            app:pressedTranslationZ="12dp"/>
+
+        <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/fab_plus"
+            app:fabSize="normal"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            app:borderWidth="0dp"
+            app:layout_anchorGravity="bottom|right|end"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignTop="@+id/fab"
+            android:layout_toEndOf="@+id/fab"
+            android:layout_toRightOf="@+id/fab"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:elevation="13dp"
+            android:background="#eee"
+            tools:elevation="12dp"
+            android:autoLink="web"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:textColor="#333"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+</LinearLayout>

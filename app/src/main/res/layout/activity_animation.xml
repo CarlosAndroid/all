@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codes.animation.Animation">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutTopAnimation"
+        android:background="#eee"
+        android:padding="7dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parar animaciones"
+            android:id="@+id/buttonStopAnimation"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_orange_dark"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/linearLayoutTopAnimation"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rotación"
+                android:id="@+id/buttonRotationAnimation"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transparencia"
+                android:id="@+id/buttonAlphaAnimation"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zoom"
+                android:id="@+id/buttonZoomAnimation"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movimiento"
+                android:id="@+id/buttonPositionAnimation"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movimiento Acelerado"
+                android:id="@+id/buttonAcceleratedAnimation"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
