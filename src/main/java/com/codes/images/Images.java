@@ -12,7 +12,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
 
@@ -36,8 +35,6 @@ public class Images extends CardView{
         radioGroup = (RadioGroup) findViewById(R.id.radioGroupImages);
         imageView = (ImageView) findViewById(R.id.imageViewImages);
 
-        //
-        Button button;
         bitmap = BitmapFactory.decodeResource(this.getResources(), R.drawable.city);
         context = this;
         final AnimatorSet animZoomIn = (AnimatorSet) AnimatorInflater.loadAnimator(context, R.animator.zoom_in);
