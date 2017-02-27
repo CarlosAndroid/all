@@ -28,7 +28,7 @@ public class Images extends CardView{
     private final String TAG = "Images";
     private RadioGroup radioGroup;
     private ImageView imageView;
-    private Bitmap bitmap2;
+    private Bitmap bitmap;
     private boolean flagZoom = false;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class Images extends CardView{
         radioGroup = (RadioGroup) findViewById(R.id.radioGroupImages);
         imageView = (ImageView) findViewById(R.id.imageViewImages);
 
-        bitmap2 = BitmapFactory.decodeResource(this.getResources(), R.drawable.city);
+        bitmap = BitmapFactory.decodeResource(this.getResources(), R.drawable.city);
         context = this;
         final AnimatorSet animZoomIn = (AnimatorSet) AnimatorInflater.loadAnimator(context, R.animator.zoom_in);
         final AnimatorSet animZoomOut = (AnimatorSet) AnimatorInflater.loadAnimator(context, R.animator.zoom_out);
