@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools" tools:context=".toolbar.Toolbars">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+
+    <item android:id="@+id/favorite"
+          android:title="@string/action_favourite"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/delete"
+          android:title="@string/action_delete"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom|withText" />
+
+</menu>
