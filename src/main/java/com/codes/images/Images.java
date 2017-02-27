@@ -18,6 +18,9 @@ import android.widget.RadioGroup;
 import com.codes.R;
 import com.codes.cardview.CardView;
 
+/**
+ * Created by Posti on 19/01/2017.
+ */
 
 public class Images extends CardView{
 
@@ -25,7 +28,7 @@ public class Images extends CardView{
     private final String TAG = "Images";
     private RadioGroup radioGroup;
     private ImageView imageView;
-    private Bitmap bitmap;
+    private Bitmap bitmap2;
     private boolean flagZoom = false;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +38,7 @@ public class Images extends CardView{
         radioGroup = (RadioGroup) findViewById(R.id.radioGroupImages);
         imageView = (ImageView) findViewById(R.id.imageViewImages);
 
-        bitmap = BitmapFactory.decodeResource(this.getResources(), R.drawable.city);
+        bitmap2 = BitmapFactory.decodeResource(this.getResources(), R.drawable.city);
         context = this;
         final AnimatorSet animZoomIn = (AnimatorSet) AnimatorInflater.loadAnimator(context, R.animator.zoom_in);
         final AnimatorSet animZoomOut = (AnimatorSet) AnimatorInflater.loadAnimator(context, R.animator.zoom_out);
@@ -46,17 +49,18 @@ public class Images extends CardView{
             public void onCheckedChanged(RadioGroup radioGroup, int id) {
                 switch(id){
                     case R.id.radioButtonCircularImages:
-                        if(flagZoom){
+                        if(flagZoom == true){
                             animZoomOut.setTarget(imageView);
                             animZoomOut.start();
                             flagZoom = false;
                         }
 
-                        Resources res = getResources();
-                        Bitmap src = BitmapFactory.decodeResource(res, R.drawable.city);
-                        RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(res, src);
-                        dr.setCircular(true);
-                        imageView.setImageDrawable(dr);
+                            Resources res = getResources();
+                            Bitmap src = BitmapFactory.decodeResource(res, R.drawable.city);
+                            RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(res, src);
+                            dr.setCircular(true);
+                            imageView.setImageDrawable(dr);
+
                         break;
 
                     case R.id.radioButton2:
@@ -71,7 +75,6 @@ public class Images extends CardView{
                         flagZoom = true;
                         animZoomIn.setTarget(imageView);
                         animZoomIn.start();
-                        break;
                 }
             }
         });
