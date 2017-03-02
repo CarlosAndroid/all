@@ -13,6 +13,10 @@ android {
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
     }
+    lintOptions {
+        abortOnError false
+    }
+    
     buildTypes {
         release {
             minifyEnabled true
