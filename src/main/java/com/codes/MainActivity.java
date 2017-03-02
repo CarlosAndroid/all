@@ -8,11 +8,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.codes.animation.Animation;
-import com.codes.images.Images;
 import com.codes.buttons.Buttons;
 import com.codes.camera.CameraRecord;
 import com.codes.cardview.CardView;
 import com.codes.fragment.Fragments;
+import com.codes.images.Images;
 import com.codes.map.Map;
 import com.codes.sensors.Sensors;
 import com.codes.toolbar.Toolbars;

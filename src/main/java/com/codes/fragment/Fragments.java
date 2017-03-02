@@ -3,6 +3,7 @@ package com.codes.fragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+
 import com.codes.R;
 
 public class Fragments extends AppCompatActivity implements Comunicador{
